@@ -1,7 +1,21 @@
-<p>
+<h1>
   Simple weather Widget.
-</p>
+</h1>
 
+<form name="myForm">
+    <label for="city">City</label>
+    <input [(ngModel)]="city" type="text" name="inputcity" required>
+</form>
+<p></p>
+<p></p>
 <button (click)="getWeather()">Click here to get weather!</button>
+
+<p> Current temperature: {{numericalvalue}}</p>
+<p> Current humidity: {{additionalInfo.humidity}}</p>
+<p> Current wind speed: {{additionalInfo.windSpeed}}</p>
+<p> Current pressure: {{additionalInfo.pressure}}</p>
+<p> Feels like: {{additionalInfo.feelsLike}}</p>
+<!-- 
+<button (click)="getLocation()">Click here to get location!</button> -->
 
 
